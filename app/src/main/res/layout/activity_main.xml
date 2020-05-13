@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your name:" />
+
+            <EditText
+                android:id="@+id/applicant_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                style="@style/Text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Which of these is not an early version of a computer?" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/Quiz1_1"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAGE" />
+
+                <RadioButton
+                    android:id="@+id/Quiz1_2"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UNIVAC" />
+
+                <RadioButton
+                    android:id="@+id/Quiz1_3"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENIAC" />
+
+                <RadioButton
+                    android:id="@+id/Quiz1_4"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="display"
+                    android:text="NASA" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/Text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. How many pragramming languages are in use? " />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/Quiz2_1"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000" />
+
+                <RadioButton
+                    android:id="@+id/Quiz2_2"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="display"
+                    android:text="2000" />
+
+                <RadioButton
+                    android:id="@+id/Quiz2_3"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50" />
+
+                <RadioButton
+                    android:id="@+id/Quiz2_4"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/Text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Who founded Apple computer?" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/Quiz3_1"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Gates" />
+
+                <RadioButton
+                    android:id="@+id/Quiz3_2"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="display"
+                    android:text="Steve Jobs" />
+
+                <RadioButton
+                    android:id="@+id/Quiz3_3"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stephen Fry" />
+
+                <RadioButton
+                    android:id="@+id/Quiz3_4"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stephen Hawkings" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/Text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Which languages provided below are interpreted programming languages?" />
+
+            <CheckBox
+
+                android:id="@+id/Quiz4_1"
+                style="@style/Radio_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="display"
+                android:text="Ruby" />
+
+            <CheckBox
+                android:id="@+id/Quiz4_2"
+                style="@style/Radio_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Python" />
+
+            <CheckBox
+                android:id="@+id/Quiz4_3"
+                style="@style/Radio_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Java" />
+
+            <CheckBox
+                android:id="@+id/Quiz4_4"
+                style="@style/Radio_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="C++" />
+
+
+            <TextView
+                style="@style/Text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Which of these is not made by Apple?" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+
+                    android:id="@+id/Quiz5_1"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="display"
+                    android:text="IMAX" />
+
+                <RadioButton
+                    android:id="@+id/Quiz5_2"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IMAC" />
+
+                <RadioButton
+                    android:id="@+id/Quiz5_3"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IPAD" />
+
+                <RadioButton
+                    android:id="@+id/Quiz5_4"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iphone" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/Text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. The malicious software program, which is detrimental to other computer programs is known as …?" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+
+                    android:id="@+id/Quiz6_1"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="display"
+                    android:text="VIRUS" />
+
+                <RadioButton
+                    android:id="@+id/Quiz6_2"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WORM" />
+
+                <RadioButton
+                    android:id="@+id/Quiz6_3"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TROJAN" />
+
+                <RadioButton
+                    android:id="@+id/Quiz6_4"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPYWARE" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/Text_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. The Second Generation Computer used …" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/Quiz7_1"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INETGRATED CIRCUITS" />
+
+                <RadioButton
+
+                    android:id="@+id/Quiz7_2"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="display"
+                    android:text="TRANSISTORS" />
+
+                <RadioButton
+                    android:id="@+id/Quiz7_3"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vaccum Tube" />
+
+                <RadioButton
+                    android:id="@+id/Quiz7_4"
+                    style="@style/Radio_buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chip" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp"
+                android:onClick="FinalScore"
+                android:text="Submit" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
